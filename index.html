@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier Handmade Lemn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Stil general */
+    body {
+      margin: 0;
+      font-family: 'Lora', serif;
+      background-color: #fff8f0;
+      color: #333;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    header {
+      background-color: #f2e8dc;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5em;
+      margin: 0;
+      color: #5c3a21;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #7d5a38;
+      margin-top: 10px;
+    }
+
+    /* Navigație simplă */
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    nav a {
+      margin: 0 15px;
+      font-weight: 600;
+      color: #5c3a21;
+    }
+
+    /* Secțiuni */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: #5c3a21;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
+
+    /* Galerie obiecte */
+    .galerie {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .galerie img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Text despre mine */
+    .despre p {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.1em;
+      color: #4b3621;
+    }
+
+    /* Formular contact */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #d6c8b6;
+      border-radius: 6px;
+      font-size: 1em;
+      font-family: inherit;
+    }
+    button {
+      padding: 12px;
+      background-color: #5c3a21;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1em;
+    }
+    button:hover { background-color: #7d5a38; }
+
+    /* Footer */
+    footer {
+      background-color: #f2e8dc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #5c3a21;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Atelier Handmade Lemn</h1>
+  <p>Obiecte din lemn făcute cu grijă pentru case trăite și copii fericiți</p>
+  <nav>
+    <a href="#acasa">Acasă</a>
+    <a href="#obiecte">Ce creez</a>
+    <a href="#despre">Despre mine</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="acasa">
+  <h2>Bun venit!</h2>
+  <p>Explorați lumea obiectelor mele handmade din lemn. Fiecare piesă e făcută cu grijă și pasiune.</p>
+</section>
+
+<section id="obiecte">
+  <h2>Ce creez</h2>
+  <div class="galerie">
+    <img src="pat-copii.jpg" alt="Pat copii">
+    <img src="cuier-lemn.jpg" alt="Cuier lemn">
+    <img src="raft-lemn.jpg" alt="Raft lemn">
+  </div>
+</section>
+
+<section id="despre" class="despre">
+  <h2>Despre mine</h2>
+  <p>Îmi place să lucrez cu lemnul și răbdarea mea. Fiecare obiect e făcut cu grijă și drag pentru cine îl primește.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact / Comenzi</h2>
+  <form>
+    <input type="text" name="nume" placeholder="Numele tău" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="mesaj" rows="5" placeholder="Mesajul tău" required></textarea>
+    <button type="submit">Trimite mesaj</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Atelier Handmade Lemn - Toate drepturile rezervate
+</footer>
+
+</body>
+</html>
