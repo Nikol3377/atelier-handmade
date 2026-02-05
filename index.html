@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atelier Handmade Lemn</title>
+  <title>Atelier Handmade – Creații cu imaginație</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -61,12 +61,18 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
     }
+    .galerie a {
+      display: block;
+    }
     .galerie img {
       width: 100%;
       height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .galerie img:hover {
+      transform: scale(1.05);
     }
 
     .hero img {
@@ -133,8 +139,8 @@
 <body>
 
 <header>
-  <h1>Atelier Handmade Lemn</h1>
-  <p>Obiecte din lemn făcute cu grijă pentru case trăite și copii fericiți</p>
+  <h1>Atelier Handmade</h1>
+  <p>Creații unice, născute din imaginație și pasiune</p>
   <nav>
     <a href="#acasa">Acasă</a>
     <a href="#obiecte">Ce creez</a>
@@ -145,15 +151,16 @@
 
 <section id="acasa">
   <h2>Bun venit!</h2>
-  <!-- Imaginea mare cu pătuțul – dacă ai în folderul images/ -->
+  <!-- Imaginea principală – poți schimba cu ce vrei tu -->
   <div class="hero">
-    <img src="images/patut-handmade.jpg" alt="Pătuț copii handmade" loading="lazy">
+    <img src="images/pat-copii.jpg" alt="Creație handmade" loading="lazy">
   </div>
-  <p>Explorați lumea obiectelor mele handmade din lemn. Fiecare piesă e făcută cu grijă și pasiune.</p>
+  <p>Explorați lumea creațiilor mele handmade. Fiecare piesă e născută din imaginație, grijă și multă pasiune.</p>
 </section>
 
 <section id="obiecte">
   <h2>Ce creez</h2>
+  <p>Lucruri unice, gândite și realizate cu multă imaginație – din orice material sau idee care mă inspiră.</p>
   <div class="galerie">
     <a href="images/pat-copii.jpg" target="_blank">
       <img src="images/pat-copii.jpg" alt="Pat copii" loading="lazy">
@@ -164,19 +171,17 @@
     <a href="images/pictura-perete.jpg" target="_blank">
       <img src="images/pictura-perete.jpg" alt="Pictură perete" loading="lazy">
     </a>
-    <!-- Dacă ai și altele (raft, cuier etc.), adaugă-le la fel -->
-    <!-- <a href="images/raft-lemn.jpg" target="_blank"> -->
-    <!--   <img src="images/raft-lemn.jpg" alt="Raft lemn" loading="lazy"> -->
-    <!-- </a> -->
-    <!-- <a href="images/cuier-lemn.jpg" target="_blank"> -->
-    <!--   <img src="images/cuier-lemn.jpg" alt="Cuier lemn" loading="lazy"> -->
+    <!-- Aici poți adăuga oricând alte creații noi -->
+    <!-- Exemplu: -->
+    <!-- <a href="images/alt-proiect.jpg" target="_blank"> -->
+    <!--   <img src="images/alt-proiect.jpg" alt="Alt proiect handmade" loading="lazy"> -->
     <!-- </a> -->
   </div>
 </section>
 
 <section id="despre" class="despre">
   <h2>Despre mine</h2>
-  <p>Îmi place să lucrez cu lemnul și răbdarea mea. Fiecare obiect e făcut cu grijă și drag pentru cine îl primește.</p>
+  <p>Îmi place să creez lucruri unice. Las imaginația să zboare și transform ideile în obiecte care aduc bucurie. Nu mă limitez la un singur material – folosesc ce simt că merge bine pentru fiecare proiect.</p>
 </section>
 
 <section id="contact">
@@ -190,7 +195,7 @@
 </section>
 
 <footer>
-  © 2026 Atelier Handmade Lemn - Toate drepturile rezervate
+  © 2026 Atelier Handmade – Toate drepturile rezervate
 </footer>
 
 </body>
